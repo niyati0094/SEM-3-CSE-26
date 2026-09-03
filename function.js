@@ -1,0 +1,15 @@
+function GetData(dataId){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          console.log("data",dataId);
+          resolve("successfull");
+        }, 8000);
+    });
+}
+
+let r = GetData(123);
+constt GetPromise = () => {
+    return new Promise((resolve, reject) => {
+        console.log("i m a promise");
+    });
+};
