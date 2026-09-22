@@ -8,8 +8,15 @@ function GetData(dataId){
 }
 
 let r = GetData(123);
-constt GetPromise = () => {
+const GetPromise = () => {
     return new Promise((resolve, reject) => {
         console.log("i m a promise");
+        resolve("success");
     });
 };
+
+let promise = GetPromise();
+promise.then((res) => {
+    console.log("promise 
+         is fulfilled");
+});
