@@ -5,7 +5,7 @@ app.use(express.json());
 let students = [
     { id: 1, name: "Rahul", branch: "CSE" },
     { id: 2, name: "Aman", branch: "IT" },
-    { id: 3, name: "Rohit", branch: "ECE" }
+    { id: 3, name: "Ankti", branch: "ECE" }
 ];
 
 app.get('/students', (req, res) => {
