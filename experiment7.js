@@ -3,7 +3,7 @@ const app = express();
 app.use(express.json());
 
 let students = [
-    { id: 1, name: "Rahul", branch: "CSE" },
+    { id: 1, name: "Alice", branch: "CSE" },
     { id: 2, name: "Aman", branch: "IT" },
     { id: 3, name: "Ankti", branch: "ECE" }
 ];
