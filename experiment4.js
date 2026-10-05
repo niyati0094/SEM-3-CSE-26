@@ -1,29 +1,44 @@
 const express = require('express');
-const {graphqlHTTP} = require('express-graphql');
-const {buildSchema} = require('graphql');
-
 const app = express();
 
-// Define a simple GraphQL schema
-const schema = buildSchema(`
-    type Query {
-        message: String
-    }
-`);
-const root = {
-    message: ()=> {
-        return "Hello Students! Welcome to GraphQL";
-    }
-};
+app.use(express.json());
 
-app.use(
-    "/graphql",
-    graphqlHTTP({
-        schema: schema,
-        rootValue: root,
-        graphiql: true
-    })
-);
-app.listen(3000, () => {
-    console.log("GraphQL server is running on port 3000");
+let students = [
+    {
+        id: 1,
+        name: "Priyanshi",
+        branch: "CSE"
+    },
+    {
+        id: 2,
+        name: "Nishu",
+        branch: "IT"
+    }
+];
+
+// Home route
+app.get('/', (req, res) => {
+    res.send("Student API is running");
+});
+
+// GET operation
+// Show students to get data
+app.get('/students', (req, res) => {
+    res.json(students);
+});
+
+// POST operation
+// Add new student data
+app.post('/students', (req, res) => {
+    students.push(newStudent);
+
+    res.json({
+        message: "Student added successfully",
+        student: newStudent
+    });
+});
+
+// Start server
+app.listen(3005, () => {
+    console.log("Server running at http://localhost:3005");
 });
