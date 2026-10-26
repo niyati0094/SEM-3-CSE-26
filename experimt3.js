@@ -7,5 +7,5 @@ res.end("Hello world");
 });
 
 server.listen(1000,() =>{
-    console.log("Server is running on Port 1000");
+    console.log("Server is Running on Port 1000");
 });
