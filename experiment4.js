@@ -40,5 +40,5 @@ app.post('/students', (req, res) => {
 
 // Start server
 app.listen(3005, () => {
-    console.log("Server running at http://localhost:3005");
+    console.log("Server running at http://localhost:3000");
 });
