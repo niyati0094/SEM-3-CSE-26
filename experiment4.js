@@ -33,7 +33,7 @@ app.post('/students', (req, res) => {
     students.push(newStudent);
 
     res.json({
-        message: "Student added successfully",
+        message: "Student added successfulli",
         student: newStudent
     });
 });
