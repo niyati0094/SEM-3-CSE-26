@@ -24,7 +24,7 @@ let products = [
     },
     {
         id: 3,
-        name: "Keyboard",
+        name: "keyboard",
         category: "Accessories",
         price: 1500,
         quantity: 17
