@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 app.post('/students', (req, res) => {
     const newStudent = req.body;
     students.push(newStudent);
-    res.status(201).json({ message: "Student added successfully", student: newStudent });
+    res.status(201).json({ message: "Student Added successfully", student: newStudent });
 });
 app.listen(3000, () => {
     console.log("Server is running at http://localhost:3000");
