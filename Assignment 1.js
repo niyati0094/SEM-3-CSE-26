@@ -27,7 +27,7 @@ let products = [
         name: "Keyboard",
         category: "Accessories",
         price: 1500,
-        quantity: 16
+        quantity: 17
     }
 ];
 
