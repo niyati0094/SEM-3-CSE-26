@@ -19,7 +19,7 @@ let products = [
         id: 2,
         name: "Mobile Phone",
         category: "Electronics",
-        price: 27000,
+        price: 28000,
         quantity: 22
     },
     {
