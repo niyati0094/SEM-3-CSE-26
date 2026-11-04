@@ -20,7 +20,7 @@ app.put('/students/:id', (req, res) => {
 
     if (!student) {
         return res.status(404).json({
-            message: "Student not found"
+            message: "student not found"
         });
     }
 

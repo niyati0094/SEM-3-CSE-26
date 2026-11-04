@@ -12,22 +12,22 @@ let products = [
         id: 1,
         name: "Laptop",
         category: "Electronics",
-        price: 55000,
-        quantity: 10
+        price: 56000,
+        quantity: 11
     },
     {
         id: 2,
         name: "Mobile Phone",
         category: "Electronics",
-        price: 25000,
-        quantity: 20
+        price: 26000,
+        quantity: 21
     },
     {
         id: 3,
         name: "Keyboard",
         category: "Accessories",
-        price: 1200,
-        quantity: 15
+        price: 1300,
+        quantity: 16;
     }
 ];
 
